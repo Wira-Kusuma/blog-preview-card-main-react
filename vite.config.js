@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/blog-preview-main-card-main-react/",
   plugins: [react()],
+  build: {
+    outDir: 'docs'
+  }
 })
