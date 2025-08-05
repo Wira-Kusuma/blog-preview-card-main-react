@@ -19,9 +19,7 @@ function App() {
 
 function Status() {
   return(
-    <div>
-      <p>learning</p>
-    </div>
+      <p className='status'>learning</p>
   );
 }
 

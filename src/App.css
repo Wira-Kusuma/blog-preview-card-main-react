@@ -1,11 +1,16 @@
+:root{
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+
 header {
-  width: 100%;
+  width: fit-content;
   border: 1px solid;
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   box-shadow: 10px 10px 0 0 black;
   border-radius: 20px;
   padding: 1rem;
@@ -15,3 +20,11 @@ header img:first-child {
   width: 90%;
   border-radius: 10px;
 } 
+
+.status {
+  width: fit-content;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  background-color:var(--Yellow) ;
+  font-weight: 600;
+}
