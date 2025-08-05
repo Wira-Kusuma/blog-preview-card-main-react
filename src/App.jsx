@@ -1,20 +1,22 @@
 // import { useState } from 'react'
 import './App.css'
+import illustrationImg from './images/illustration-article.svg';
+import userImg from './images/image-avatar.webp';
+
+
 
 
 const item = {
-    illustrationImg:"./assets/images/illustration-article.svg",
     title:"HTML & CSS foundations",
     published:"21 Dec 2023",
     description:"These languages are backbone of every website, defining structure, content, and presentation",
     username:"Greg Hooper",
-    userImg:"./assets/images/image-avatar.webp"
 }
 
 function App() {
   return(
     <header>
-      <img src={item.illustrationImg} alt={item.title} />
+      <img src={illustrationImg} alt={item.title} />
       <Status />
       <Date />
       <h1>{item.title}</h1>
@@ -45,7 +47,7 @@ function Description() {
 function User() {
   return(
     <div className="user">
-      <img src={item.userImg} alt={item.username} />
+      <img src={userImg} alt={item.username} />
       <p className='username'>{item.username}</p>
     </div>
   )
