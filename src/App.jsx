@@ -15,14 +15,14 @@ const item = {
 
 function App() {
   return(
-    <header>
+    <main>
       <img src={illustrationImg} alt={item.title} />
       <Status />
       <Date />
       <h1>{item.title}</h1>
       <Description/>
       <User/>
-    </header>
+    </main>
   );  
 }
 

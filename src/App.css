@@ -5,7 +5,7 @@
   --Gray-950: hsl(0, 0%, 7%);
 }
 
-header {
+main {
   max-width: 50%;
   border: 1px solid;
   background-color: white;
@@ -18,17 +18,17 @@ header {
   margin: auto;
 }
 
-header h1 {
+main h1 {
   font-size: 1.5rem;
   cursor: pointer;
   transition: ease-in-out 0.2s;
 }
 
-header h1:hover {
+main h1:hover {
   color: var(--Yellow);
 }
 
-header img:first-child {
+main img:first-child {
   width: 100%;
   border-radius: 10px;
 } 
