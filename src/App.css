@@ -6,7 +6,7 @@
 }
 
 header {
-  width: fit-content;
+  max-width: 50%;
   border: 1px solid;
   background-color: white;
   display: flex;
@@ -14,10 +14,22 @@ header {
   box-shadow: 10px 10px 0 0 black;
   border-radius: 20px;
   padding: 1rem;
+  gap: 1rem;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+header h1:hover {
+  color: var(--Yellow);
 }
 
 header img:first-child {
-  width: 90%;
+  width: 100%;
   border-radius: 10px;
 } 
 
@@ -27,4 +39,34 @@ header img:first-child {
   border-radius: 5px;
   background-color:var(--Yellow) ;
   font-weight: 600;
+}
+
+.date {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.desc {
+  color: var(--Gray-500);
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user img {
+  max-width: 2.5rem;
+}
+
+.username {
+  font-weight: 600;
+}
+
+@media screen and (max-width:30rem){
+  header {
+    max-width: 90%;
+  }
 }
